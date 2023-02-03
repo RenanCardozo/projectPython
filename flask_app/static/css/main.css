@@ -4,10 +4,10 @@
   --color-primary: #25ab75;
   --color-primary-dark: #208c61;
   --color-bg-primary: #1a1a1a;
-  --color-bg-secondary: #242424;
+  --color-bg-secondary:#212529;
   --color-bg-footer: #151515;
   --color-white: #ffffff;
-  --color-text: #676767;
+  --color-text: white;
   --color-border: #373737;
 
   /* Font & Typography
@@ -34,8 +34,8 @@
   /* With & Height 
   ------------------*/
   --width-container: 98rem;
-  --height-header: 10rem;
-  --height-header--scroll: 8rem;
+  --height-header: 7rem;
+  --height-header--scroll: 6rem;
 
   /* Transition and box shadow*/
   --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -428,7 +428,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 
-
+}
 
 
 
@@ -478,5 +478,18 @@ body {
   --color-bg-secondary: #242424;
   animation:steps(5) infinite;
 }
+.section-padding{
+  padding: 100px 0;
+}
+.box-shadow{
+  box-shadow: 29px 22px 59px -5px rgba(98, 34, 34, 0.7)
+}
 
+}
 
+main{
+  background-image: url('https://images.unsplash.com/photo-1605296867724-fa87a8ef53fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/main.css') }}">
+    <script type="stylesheet" src="{{ url_for('static', filename='/js/main.js') }}"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <title></title>
+</head>
+
+<body class="" style="background-color:  #1a1a1a;">
+
+
+    <header id="header" class="header bg-dark">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav__brand">
+                    <i class=""></i><img src="{{ url_for('static', filename='/img/download-removebg-preview.png') }}"
+                        style="height: 5rem;">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list mt-3">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link">Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/#service" class="nav__link">Workout Plans</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/GetFit/login" class="nav__link">Sign Up / Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!--=================== main ====================-->
+    <main class="main2">
+        <!--=================== Hero ====================-->
+        <section id="hero" class="hero section-padding ">
+
+            <div class="container border p-5 ">
+                <div class="">
+
+
+                    <h1>If you're ready for a true test of willpower that will completely transform your physique, try
+                        out our free Sample Week below! But it won't be easy! Expect tons of volume, crazy dropsets, and
+                        hammering every muscle group from every angle. If you would like to try out the whole program
+                        SIGN UP TODAY!</h1>
+                </div>
+            </div>
+
+        </section>
+        <section id="service" class="section-padding  mt-5">
+            <div class="jumbotron container border p-5  ">
+
+                <h1 class="display-3 text-center">SAMPLE OF FIRST WEEK</h1>
+                <h1>Week 1 : </h1>
+                <hr class="my-2">
+                <h4>Day 1 - Back :</h4>
+                <p>Front WIDE pulldowns - 4 sets 15-12 elbows back when pulling down</p>
+                <p>Reverse Closegrip pulldowns - 4 sets 12-10 keep biceps near ears when pulling</p>
+                <p>DB rows HEAVY - 4 sets 12-10 Heavy but good form</p>
+                <p>T-bar rows - 4 sets 12-10 heavy but good form</p>
+                <p>Seated Rows - 4 sets 12-10 reps elbows back chest out</p>
+                <br>
+                <h4>Day 2 - Chest:</h4>
+                <p>Flat Chest Press - 4 sets of 10-12 reps</p>
+                <p>Incline Chest press - 4 sets 8-10 reps</p>
+                <p>Incline Flies DB- 4 sets of 12-15 reps</p>
+                <p>Cable Flies High/Low/Medium - 4 sets 12-15 reps each</p>
+                <br>
+                <h4>Day 3 - Legs :</h4>
+                <p>Leg Extensions - 2 warmup sets of 10 - 4 sets of 10-20 reps</p>
+                <p>Hack Squat - 4 sets of 10-12 reps *NO BOUNCING*</p>
+                <p>Squats - 4 sets 15-15-12-12 reps</p>
+                <p>Seated Curls - 4 sets 15-15-12-12 increasing weight each set</p>
+                <br>
+                <h4>Day 4 - Shoulders :</h4>
+                <p>Barbell Wide Upright Rows - 4 sets 10-12 reps</p>
+                <p> DB Presses - 4 sets 10-12 reps</p>
+                <p>DB Side Raises - 4 sets 20-15-12-10 increase weight each set</p>
+                <p>Face Pulls - 4 sets 20-15-12-10 increase weight each set </p>
+                <br>
+                <h4>Day 5 - Arms :</h4>
+                <p>Barbell Curl Wide - 4 sets to failure each set</p>
+                <p>DB curls - 4 sets to failure then drop 1 time to failure </p>
+                <p>Heavy DB Curls - 4 sets 8-10 reps increase weight each set</p>
+                <p>Tricep Pushdown - 4 sets 10-12 reps</p>
+                <p>Rope Pushdown - 4 sets 10-12 reps Good Squeeze on each rep</p>
+                <p>Skull Crushers - 4 sets 10-12 reps increase weight each setd</p>
+
+
+                <p class="lead">
+
+                </p>
+            </div>
+        </section>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/main.js') }}"></script>
+</body>
+
+</html>

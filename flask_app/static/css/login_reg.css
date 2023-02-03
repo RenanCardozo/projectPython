@@ -7,7 +7,7 @@
     --color-bg-secondary: #242424;
     --color-bg-footer: #151515;
     --color-white: #ffffff;
-    --color-text: #676767;
+    --color-text: white;
     --color-border: #373737;
   
     /* Font & Typography
@@ -16,7 +16,7 @@
     /* font sizes */
     --fs-sm: 1.4rem;
     --fs-md: 1.6rem;
-    --fs-lg: 2rem;
+    --fs-lg: 1.5rem;
     --fs-xl: 2.4rem;
     --fs-xxl: 3.2rem;
     --fs-biggest: clamp(3rem, 8vw, 5rem);
@@ -34,8 +34,8 @@
     /* With & Height 
     ------------------*/
     --width-container: 98rem;
-    --height-header: 5rem;
-    --height-header--scroll: 8rem;
+    --height-header: 4rem;
+    --height-header--scroll: 5rem;
   
     /* Transition and box shadow*/
     --transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -154,3 +154,4 @@
       z-index: var(--zindex-fixed);
     }
   }
+

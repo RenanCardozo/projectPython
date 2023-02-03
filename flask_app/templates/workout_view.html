@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="container bg-dark " >
+    <div class="d-flex justify-content-center text-center mt-2 mb-2">
+        <div  class="text-center text-light">
+            <h1>Lets Catch This Pump!</h1>
+            <h1> {{users.first_name}} {{users.last_name}}</h1>
+            
+        </div>
+        <div style="margin-left: 20% ;" class="mt-5">
+    <a href="/GetFit/dashboard" class="btn btn-info">DashBoard</a>
+    <a href="/logout" class="btn  btn-info">Logout</a>
+    </div>
+    </div>
+    <div class="card col-10 mx-auto bg-light text-dark" style="font-weight: 500; font-size:large;">
+        <div class="card-body">
+            <h2 class="card-title text-primary">{{one_type.level}} {{one_type.body_part}} Workout</h2>
+            {% for workout in  one_type.workouts %}
+            <p class="card-text"> Exercise: {{workout.workout_name}}</p>
+            <p>{{workout.sets}} Sets </p>
+            <p>{{workout.reps}} Reps</p>
+            <p class="card-text">Use Weight Based off of your own skill level 🏋️‍♂️</p>
+            <hr>
+
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

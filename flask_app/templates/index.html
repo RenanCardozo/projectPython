@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetFit Programs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!--=================== Google Fonts ====================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!--=================== Remixicons ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=================== SwiperJS CSS ====================-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
+    <!--=================== Main CSS ====================-->
+    <!-- based on the folder structure on the right -->
+    <!-- linking a css style sheet -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/main.css') }}">
+    <!-- linking a javascript file -->
+
+    <!-- linking an image -->
+
+
+
+
+</head>
+
+<body>
+
+    <!--=================== Header ====================-->
+    <header id="header" class="header bg-dark">
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav__brand">
+                    <i class=""></i><img src="{{ url_for('static', filename='/img/download-removebg-preview.png') }}"
+                        style="height: 5rem;">
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/" class="nav__link">Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#service" class="nav__link">Workout Plans</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="/GetFit/login" class="nav__link">Sign Up / Login</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav__toggle">
+                    <i id="nav-toggle" class="ri-menu-3-line"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--=================== main ====================-->
+
+    <!--=================== Hero ====================-->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="d-grid hero__wrapper">
+                <div class="hero__content ">
+                    <h1 class="hero__title">Welcome to GetFit <br>Are you ready to..</h1>
+                    <div class="wrapper">
+
+                        <ul class="dynamic-txts">
+                            <li><span>Get Fit?</span></li>
+                            <li><span>Get Healthy?</span></li>
+                            <li><span>Get Started?</span></li>
+                            <li><span>Start NOW!!</span></li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                </div>
+                <img src="{{ url_for('static', filename='/img/women_and_man.png') }}" class="hero__img">
+            </div>
+            <h1 style="text-align:center;">Check out the programs we offer below that can get you started today!</h1>
+        </div>
+    </section>
+
+    <!--=================== services ====================-->
+    <section id="service" class="section service">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Workout Plans</h2>
+                <h4><span class="section__subtitle">Lets get started !</span></h4>
+            </div>
+            <div class="d-grid service__wrapper">
+                <!--========= service card 1 =========-->
+                <div class="service__card box-shadow">
+                    <h3 class="service__title">Begginer<br>Workout Plan</h3>
+                    <a href="/GetFit/workouts" class="service__link">Click For More Info</a>
+                </div>
+                <!--========= service card 2 =========-->
+                <div class="service__card box-shadow">
+                    <h3 class="service__title">Intermediate<br>Workout Plan</h3>
+                    <a href="/GetFit/workouts" class="service__link">Click For More Info</a>
+                </div>
+                <!--========= service card 3 =========-->
+                <div class="service__card box-shadow">
+                    <h3 class="service__title">Advanced<br> Workout Plan</h3>
+                    <a href="/GetFit/workouts" class="service__link">Click For More Info</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=================== SwiperJS  ====================-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!--=================== ScrollReveal ==================-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=================== Main JS ====================-->
+    <script type="text/javascript" src="{{ url_for('static', filename='/js/main.js') }}"></script>
+</body>
+
+</html>
